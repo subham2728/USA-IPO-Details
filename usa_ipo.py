@@ -62,7 +62,7 @@ future_date_object = datetime.datetime.strptime(future_date, "%Y-%m-%d").date()
 
 print("Date after",days,"days = ",future_date_object)
 
-json_date = finnhub_client.ipo_calendar(_from = "date_today", to = "2022-04-15")
+json_date = finnhub_client.ipo_calendar(_from = "date_today", to = "future_date_object")
 
 # print(type(json_date))
 
